@@ -18,10 +18,10 @@ export const Links = ({ isOpen, setIsOpen, servicesButtonRef, servicesMenuRef }:
             </li>
 
             <li>
-                <a href="">About Us</a>
+                <a href="/#about">About Us</a>
             </li>
             <li>
-                <a href="">Contact Us</a>
+                <a href="/#contact">Contact Us</a>
             </li>
             <li>
                 <a href="#login" className="border-[#20B15A] border px-3 py-2 rounded-xl">Login</a>
