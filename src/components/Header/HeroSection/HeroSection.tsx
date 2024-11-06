@@ -1,3 +1,4 @@
+import { Zoom } from "react-awesome-reveal"
 import img from "../../../assets/Group 38.png"
 export const HeroSection = () => {
     return (
@@ -7,7 +8,10 @@ export const HeroSection = () => {
                 <p className="text-lg pb-6">We help businesses like yours earn more customers, standout from competitors, make more money</p>
                 <button className=" text-white bg-bg-green px-5 py-4 rounded-xl font-medium">Get Started</button>
             </div>
+            <Zoom triggerOnce={true} duration={1000}>
             <img src={img} alt="" className="max-[850px]:pt-12" />
+            </Zoom>
+            
         </div>
     )
 }

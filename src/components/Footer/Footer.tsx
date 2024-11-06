@@ -8,7 +8,7 @@ const Footer = () => {
     return (
         <footer className="px-24 max-[600px]:px-10  bg-[#00CA72] py-16">
             <div className="flex flex-wrap justify-between gap-10">
-                <Fade triggerOnce={true} cascade duration={1500} direction="up">
+                <Fade triggerOnce={true} duration={1000} direction="up">
                     <div className="max-w-[350px]">
                         <TopFooter />
                         <GridIconsFooter />
@@ -18,7 +18,7 @@ const Footer = () => {
                 </Fade>
 
             </div>
-            <Fade triggerOnce={true} duration={2000} direction="down">
+            <Fade triggerOnce={true} duration={1000} direction="down">
                 <p className="text-lg pt-16">Copyright design Agency 2022</p>
             </Fade>
 

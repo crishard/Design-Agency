@@ -9,7 +9,7 @@ interface ICardWhatWeDoProps {
 export const CardWhatWeDo = ({ title, img }: ICardWhatWeDoProps) => {
     return (
         <div className="hover:shadow-md px-6 py-8 rounded-xl max-w-[350px]">
-            <img src={img} alt="What We Do" className="w-20 pb-5"/>
+            <img src={img} alt="What We Do" className="w-20 pb-5" />
             <h3 className="text-xl font-semibold pb-4">{title}</h3>
             <p>We help identify the best ways to improve tour business</p>
 

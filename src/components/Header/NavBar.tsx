@@ -1,5 +1,4 @@
 import { useRef, useState } from "react";
-import { Fade, Zoom } from "react-awesome-reveal";
 import { useClickOutside } from "../../hooks/useClickOutside";
 import { Links } from "./Links";
 import { OpenNavBar } from "./OpenNavBar";
@@ -15,18 +14,12 @@ export const NavBar = () => {
 
     return (
         <div className="flex justify-between items-center px-24 max-[600px]:px-10">
-            <Zoom triggerOnce={true} cascade duration={1500} >
-                <h2 className="font-bold text-2xl">
-                    Design<span className="text-orange">AGENCY</span>
-                </h2>
-            </Zoom>
+            <h2 className="font-bold text-2xl">
+                Design<span className="text-orange">AGENCY</span>
+            </h2>
             <nav>
                 <OpenNavBar navBarIsOpen={navBarIsOpen} />
-
-                <Fade triggerOnce={true} duration={2000} direction="down">
-                    <Links isOpen={isOpen} setIsOpen={() => setIsOpen(!isOpen)} servicesButtonRef={servicesButtonRef} servicesMenuRef={servicesMenuRef} />
-                </Fade>
-
+                <Links isOpen={isOpen} setIsOpen={() => setIsOpen(!isOpen)} servicesButtonRef={servicesButtonRef} servicesMenuRef={servicesMenuRef} />
                 <ToggleIconMenu navBarIsOpen={navBarIsOpen} setNavBarIsOpen={() => setNavBarIsOpen(!navBarIsOpen)} />
             </nav>
         </div>

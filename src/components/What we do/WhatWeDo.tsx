@@ -16,12 +16,11 @@ export const WhatWeDo = () => {
             <HeaderSections text={"WHAT WE DO"} title={"We provide the Perfect Solution to your business growth"} />
 
             <div className="grid grid-cols-3 lg:gap-5 pt-16 max-[920px]:grid-cols-2 max-[775px]:grid-cols-1">
-                <Fade triggerOnce={true} cascade duration={1000} direction="left">
+                <Fade triggerOnce={true} duration={1000} direction="left">
                     <CardWhatWeDo title={"Grow Your Business"} img={imgActivity} />
                     <CardWhatWeDo title={"Improve brand loyalty"} img={imgHeart} />
                     <CardWhatWeDo title={"Improve Business model"} img={imgWork} />
                 </Fade>
-
             </div>
 
             <div className="flex justify-center  flex-wrap gap-20 pt-32 pb-16 ">

@@ -1,4 +1,3 @@
-import { Zoom } from "react-awesome-reveal";
 import CountUp from "react-countup";
 import { useVisibility } from "../../hooks/useVisibility"; // Caminho para o hook
 
@@ -22,10 +21,7 @@ export const WhatWeDoNumbers = ({
     return (
         <div ref={elementRef} className="text-center">
             <div className="flex justify-center pb-1">
-                <Zoom triggerOnce={true} duration={2000}>
-                    <img src={imgNumber} alt={numberDescription} />
-                </Zoom>
-
+                <img src={imgNumber} alt={numberDescription} />
             </div>
 
             <p>{numberDescription}</p>
